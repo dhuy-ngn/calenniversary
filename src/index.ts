@@ -2,6 +2,7 @@ import { Client, GatewayIntentBits } from 'discord.js';
 import { commands } from './commands';
 import { config } from './config';
 import { deployCommands } from './deploy-commands';
+import { Logger } from './logger';
 
 const client = new Client({
   intents: [

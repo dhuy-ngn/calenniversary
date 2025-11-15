@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "prepare": "husky",
     "dev": "node --env-file .env ./src/index.ts --watch",
     "prettier": "prettier --write ."
@@ -21,6 +22,7 @@
     "@eslint/js": "^9.39.1",
     "eslint": "^9.39.1",
     "husky": "^9.1.7",
+    "jiti": "^2.6.1",
     "lint-staged": "^16.2.6",
     "prettier": "3.6.2",
     "typescript": "^5.9.3",

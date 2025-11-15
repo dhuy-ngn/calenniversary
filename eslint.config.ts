@@ -9,8 +9,21 @@ export default defineConfig(
   {
     languageOptions: {
       parserOptions: {
-        projectService: true,
+        projectService: {
+          allowDefaultProject: ['eslint.config.ts', 'build/*.ts'],
+          defaultProject: 'tsconfig.json',
+        },
+        tsconfigRootDir: import.meta.dirname,
+        sourceType: 'module',
       },
+    },
+    rules: {
+      '@typescript-eslint/no-misused-spread': [
+        'error',
+        {
+          allow: ['string'],
+        },
+      ],
     },
   },
 );

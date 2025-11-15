@@ -16,5 +16,5 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true
   },
-  "exclude": ["**.config.ts"]
+  "include": ["src"]
 }
