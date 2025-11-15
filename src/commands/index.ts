@@ -1,3 +1,3 @@
-import * as yearly from "./yearly";
+import * as yearly from './yearly';
 
 export const commands = { yearly };

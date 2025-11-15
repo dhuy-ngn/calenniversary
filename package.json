@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "prepare": "husky",
-    "dev": "node --env-file .env ./src/index.ts --watch"
+    "dev": "node --env-file .env ./src/index.ts --watch",
+    "prettier": "prettier --write ."
   },
   "keywords": [],
   "author": "",

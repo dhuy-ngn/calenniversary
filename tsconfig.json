@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2022",
     "module": "es2022",
-    "rootDir": ".",
+    "rootDir": "./src",
     "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -15,5 +15,6 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true
-  }
+  },
+  "exclude": ["**.config.ts"]
 }
