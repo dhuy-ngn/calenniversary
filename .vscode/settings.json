@@ -4,9 +4,7 @@
     "source.addMissingImports.ts": "always",
     "source.organizeImports": "always",
     "source.sortImports": "always",
-    "source.fixAll.ts": "always",
-    "source.removeUnused.ts": "always",
-    "source.removeUnusedImports": "always"
+    "source.fixAll.ts": "always"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.jsxSingleQuote": true,
