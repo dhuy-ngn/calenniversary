@@ -13,15 +13,20 @@ const client = new Client({
 });
 const logger = Logger.getInstance();
 
-if (!client.user) {
-  throw new Error('Client user is null');
-}
-
-client.once('ready', () => {
+client.once('clientReady', () => {
   if (!client.user) {
     throw new Error('Client user is null');
   }
   logger.info(`Logged in as ${client.user.tag}`);
+
+  // Deploy commands to all guilds the bot is in (only if not already deployed)
+  client.guilds.cache.forEach((guild) => {
+    (async () => {
+      await deployCommands({ guildId: guild.id });
+    })().catch((error: unknown) => {
+      logger.error('clientReady', error);
+    });
+  });
 });
 
 client.on('guildCreate', (guild) => {
